@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Learning Thymeleaf</h1>
+    <!-- <h2>Author : <span th:text="${#strings.length(author)}"></span></h2>
+    <h2>Message : <span th:text="${#strings.toUpperCase(message)}"></span></h2>
+    <div th:with="a=5,b=4,n=${name}">
+        <h1>Value : <span th:text="${a+b}"></span></h1>
+        <h1><span th:text="'Value : '+${a+b}"></span></h1>
+    </div>-->
+    <!-- Not accessable -->
+    <!-- <h1>Value : <span th:text="${n}"></span></h1> -->
+    <!-- <h1>Value : <span th:text="${list}"></span></h1> -->
+    <!-- <ul>
+        <li th:each="l,status : ${list}" th:style="${status.odd}? 'font-weight:bold' : 'font-style:italic'" th:text="${status.index+1}+' '+${l}"></li>
+    </ul> -->
+    <!-- Conditional Rendering | Elvis Operator -->
+    <!-- <h1>User is <span th:text="${isActive} ? 'ACTIVE' : 'NOT ACTIVE'"></span></h1>
+    <h1>User is <span th:style="${isActive} ? 'color:red' : 'color:green'" th:text="${isActive} ? 'ACTIVE' : 'NOT ACTIVE'"></span></h1> -->
+    <!-- Conditional Rendering | If-Unless -->
+    <!-- <h1 th:if="${gender}=='F'">Female</h1>
+    <h1 th:unless="${gender}=='F'">Male</h1> -->
+    <!-- Conditional Rendering | Switch -->
+    <!-- <h1 th:switch="${list.size()}">
+        <p th:case="0">List is empty</p>
+        <p th:case="1">List has one item</p>
+        <p th:case="2">List has two items</p>
+        <p th:case="3">List has three items</p>
+        <p th:case="*">List has many items</p>
+    </h1> -->
+    <!-- Include/Insert/Replace -->
+    <!-- <div id="hosttag" th:replace="footer :: footer1(${title})"></div> -->
+    <!-- <div id="hosttag" th:insert="footer :: footer1"></div>
+    <div id="hosttag" th:include="footer :: footer1"></div> -->
+
+</body>
+</html>
